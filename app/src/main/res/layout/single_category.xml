@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ramotion.foldingcell.FoldingCell
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/folding_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    ​
+    <LinearLayout
+        android:id="@+id/cell_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
+            android:layout_height="200dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Difficulty"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Hard"
+                android:id="@+id/checkbox_hard"
+                android:checked="false"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Medium"
+                android:id="@+id/checkbox_medium"
+                android:checked="false"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Easy"
+                android:id="@+id/checkbox_easy"
+                android:checked="true"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:text="Play"
+            android:id="@+id/play_btn"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    ​
+    <RelativeLayout
+        android:id="@+id/cell_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/category_name_folded"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Ankit"
+            android:background="@android:color/holo_blue_dark" />
+    </RelativeLayout>
+    ​
+</com.ramotion.foldingcell.FoldingCell>
